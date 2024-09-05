@@ -1,6 +1,7 @@
 const board = Array.from({ length: 15 }, () => Array(10).fill(0));
 let score = 0;
 
+
 const cores = ["#00FFFF", "#FFFF00", "#800080", "#00FF00", "#FF0000", "#0000FF", "#FFA500"];
 
 const pecas = [
@@ -172,4 +173,4 @@ function drop() {
     drawBoard();
 }
 
-setInterval(drop, 1000);
+setInterval(drop, 250);
